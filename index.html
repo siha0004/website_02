@@ -10,8 +10,7 @@
 
     <title>Forside</title>
 
-    <link rel="stylesheet" href="css/generel.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,13 +22,13 @@
 <body>
     <header>
         <div>
-            <a href="index.html"><img src="img/logo_blue.svg" alt="Logo" class="logo"></a>
+            <a href="index.html"><img src="img/svg/logo_blue.svg" alt="Logo" class="logo"></a>
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="platform.html">Platform</a></li>
+                <li><a href="app.html">App</a></li>
                 <li><a href="community.html">Community</a></li>
-                <li><a href="about.html">Om Os</a></li>
+                <li><a href="about.html">Team</a></li>
             </ul>
             <div class="burger">
                 <div class="line"></div>
@@ -40,11 +39,155 @@
     </header>
     <main>
 
+        <div class="ramme">
+            <video autoplay muted loop class="video">
+                <source src="https://anikaborup.dk//kea/05_indhold/video_peer_performance/forsidevideo.mp4"
+                    type="video/mp4">
+            </video>
+            <div class="overlay">
+                <h4 class="lys_txt right_txt">Fysisk træning</h4>
+                <h4 class="lys_txt right_txt"> til breddefodbolden</h4>
+            </div>
+        </div>
+
+        <div class="grid_1-1 luft hex_baggrund">
+
+            <div class="frem">
+                <h2>Vi tilbyder</h2>
+                <div>
+                    <div class="flex_row flex_checkmark">
+                        <img src="img/svg/checkmark.svg" alt="checkmark" class="checkmark">
+                        <p>Inspiration til øvelser</p>
+                    </div>
+                    <div class="flex_row flex_checkmark">
+                        <img src="img/svg/checkmark.svg" alt="checkmark" class="checkmark">
+                        <p>Vidensbaseret programmer</p>
+                    </div>
+                    <div class="flex_row flex_checkmark">
+                        <img src="img/svg/checkmark.svg" alt="checkmark" class="checkmark">
+                        <p>Spillerudvikling</p>
+                    </div>
+                </div>
+            </div>
+            <div class="order frem">
+                <img src="img/webp/bolde_i_net.webp" alt="[alt]" class="hex">
+            </div>
+            <div class="hex_1 hex_1_place"></div>
+            <div class="hex_2 hex_2_place"></div>
+        </div>
+
+        <div class="grid_1-1 luft frem">
+            <div class="flex_col">
+                <h2>Hurtig planlægning</h2>
+                <p>Få mere tid og overskud til dine spillere og klar planlægningen af opvarmning, pasningsøvelse og
+                    fysisk træning, med
+                    Peer Performance App. Justér lynhurtigt antal spillere, tema, varighed og banestørrelse.</p>
+                <a href="platform.html" class="knap_2">Læs mere</a>
+            </div>
+            <img src="img/webp/app_design.webp" alt="Billede med app" class="hex">
+        </div>
+
+        <div><img src="img/svg/topbaggrund.svg" alt="" class="top"></div>
+        <div class="blaa">
+            <div class="grid_1-1 luft">
+                <div class="flex_col">
+                    <h2 class="lys_txt">Skal dit hold være med?</h2>
+                    <p class="lys_txt">Vil dit hold eller klub være med til at forme fremtiden inden for fysisk
+                        træning
+                        i dansk breddefodbold?</p>
+                    <p class="lys_txt">Kontakt os og vær med på rejsen.</p>
+                    <a href="platform.html" class="knap_2">Læs mere</a>
+                </div>
+                <div>
+                    <!-- FORM -->
+                    <form action="tak.html" name="index-form">
+                        <div class="form-felt">
+                            <label for="firstname">Fuldt navn</label>
+                            <input id="firstname" name="fname" type="text">
+                        </div>
+
+                        <div class="form-felt">
+                            <label for="lastname">Holdnavn</label>
+                            <input id="lastname" name="lname" type="text">
+                        </div>
+
+                        <div class=" form-felt">
+                            <label for="email">E-mail</label>
+                            <input id="email" name="email" type="email">
+                        </div>
+
+                        <div class="form-felt">
+                            <label for="message">
+                                Besked (valgfri)
+                                <textarea name="besked" id="message" rows="3" cols="40"></textarea>
+                            </label>
+                        </div>
+
+                        <div class="button_luft">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div><img src="img/svg/bund_baggrund.svg" alt="" class="bund"></div>
+
+        <div class="luft grid_1-1">
+
+            <div class="hex_ramme">
+                <img src="img/webp/drenge_lober.webp" alt="Billede af drenge der løber" class="img_1 hex">
+                <!-- <img src="img/hex_ramme.svg" alt="Ramme til billeder af 4 hexagoner" class="img_2"> -->
+            </div>
+            <div class="flex_col center">
+                <p class="citat">“Drengene møder et kvarter tidligere op for at sætte øvelserne op, fordi de synes,
+                    de
+                    er så fede”</p>
+                <p class="citat_af">- Jan (træner, Greve Fodbold)</p>
+            </div>
+        </div>
+
+        <div class="flex_col luft">
+            <div class="grid_1-1-1">
+                <div>
+                    <img class="hex_3" src="img/svg/greve_fodbold.svg" alt="dummy">
+                </div>
+                <div>
+                    <img class="hex_3" src="img/svg/greve_fodbold.svg" alt="dummy">
+                </div>
+                <div>
+                    <img class="hex_3" src="img/svg/greve_fodbold.svg" alt="dummy">
+                </div>
+            </div>
+
+            <div class="flex_col">
+                <h2 class="">Samarbejdspartnere</h2>
+
+                <p>Det er klubberne som står med spillerne, så derfor er det super vigtigt for os, at de er med hele
+                    vejen. Vi tester løbende programmer, sammen med vores partnere og nyder at komme ud blandt
+                    ildsjælende.</p>
+                <a href="community.html" class="knap_1">Bliv partner</a>
+            </div>
+
+        </div>
+        <div><img src="img/svg/topbaggrund.svg" alt="" class="top"></div>
+        <div class="blaa">
+
+            <div class="grid_2-1">
+                <img src="img/webp/gruppe.webp" alt="Billede af Peer Performance Team">
+                <div class="flex_col">
+                    <h2 class="lys_txt"> Peer Performance</h2>
+                    <p class="lys_txt">Gennem vores fælles interesse for træning og vores baggrund som BSc. i
+                        Excercise og Sports Science ønsker vi, at
+                        give tilbage til det foreningsliv, vi har stor kærlighed til.</p>
+                    <a href="about.html" class="knap_2">Læs mere</a>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div>
-            <a href="about.html">
-                <img src="img/logo_blue.svg" alt="Logo" class="logo_footer">
+            <a href="about.html" class="footer_flex">
+                <img src="img/svg/logo_blue.svg" alt="Logo" class="logo_footer">
                 <p class="pf">Peer Performance</p>
                 <p class="pf">Tagensvej 16A, 2200 København N</p>
             </a>
@@ -52,10 +195,10 @@
         <div class="social_flex">
             <div class="social_icon_flex">
                 <a href="https://www.instagram.com/peerperformance/">
-                    <img src="img/instagram.svg" alt="Instagram Logo" class="icon_social">
+                    <img src="img/svg/instagram.svg" alt="Instagram Logo" class="icon_social">
                 </a>
                 <a href="https://www.linkedin.com/company/peer-performance">
-                    <img src="img/linkedIn.svg" alt="LinkedIn Logo" class="icon_social">
+                    <img src="img/svg/linkedin.svg" alt="LinkedIn Logo" class="icon_social">
                 </a>
             </div>
             <p class="pf">Følg os på sociale medier</p>
