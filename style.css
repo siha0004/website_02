@@ -1,0 +1,515 @@
+/***********************************  VARIABLER  ***********************************/
+
+.html {
+  --gul: #ffa600;
+  --midnat: #022e40;
+  --brand: #04668c;
+  --lysblaa: #dbeef5;
+  --lysgron: #daebd2;
+  --hvid: #f2f2f2;
+  --sort: #333333;
+
+  --font_1: "Open Sans", sans-serif;
+  --font_2: "Fugaz One", sans-serif;
+}
+/* var(--lysblaa); */
+
+/***********************************  RESET + BASE  ***********************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #d2d2d2;
+}
+
+main {
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+/***********************************  BILLEDER  ***********************************/
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+}
+
+.logo {
+  width: 200px;
+  padding: 1rem;
+  margin: 0;
+}
+
+.logo_footer {
+  width: 200px;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+/***********************************  TEKST  ***********************************/
+
+h1 {
+  font-family: "Fugaz One", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--sort);
+  margin: 0;
+}
+
+h2 {
+  font-family: "Fugaz One", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--sort);
+  margin: 0;
+}
+
+h3 {
+  font-family: "Fugaz One", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--sort);
+  margin: 0;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+
+  color: var(--sort);
+  margin: 0;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: var(--sort);
+  margin: 0;
+  max-width: 65ch;
+}
+
+.pf {
+  font-size: 0.75rem;
+  padding: 0;
+}
+
+.citat {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+
+  color: var(--sort);
+  margin: 0;
+}
+
+.citat_af {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-style: italic;
+
+  color: var(--sort);
+  margin: 1rem 0 0;
+}
+
+.lys_txt {
+  color: var(--hvid);
+}
+
+/***********************************  HEADER  ***********************************/
+
+header {
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--hvid);
+  padding: 0.5rem;
+  margin-bottom: 0;
+
+  box-shadow: 0 0 5px #52525280;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--sort);
+}
+
+header nav ul {
+  list-style: none;
+}
+
+/***********************************  BURGERMENU  ***********************************/
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--brand);
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: var(--hvid);
+    position: absolute;
+    left: 0;
+    top: 65px;
+    width: 100%;
+    height: 100%;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 2rem 0;
+  }
+}
+
+/***********************************  FOOTER  ***********************************/
+
+footer {
+  background-color: var(--hvid);
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 4rem;
+}
+
+.pf {
+  font-size: 1rem;
+  padding: 0;
+}
+
+.social_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.social_icon_flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/***********************************  LINKS  ***********************************/
+
+a {
+  text-decoration: none;
+  color: var(--sort);
+}
+
+/***********************************  LISTER  ***********************************/
+
+ul {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+
+  text-transform: uppercase;
+  color: var(--sort);
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 0;
+}
+
+li {
+  padding: 0 1rem;
+}
+
+/***********************************  LISTEPUNKTER  ***********************************/
+
+/* Nedenstående er lånt herfra https://codepen.io/toianw/pen/YqEqrz */
+
+li {
+  list-style-type: none;
+}
+
+li > a {
+  display: inline-block;
+  position: relative;
+}
+
+li > a::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0;
+  top: 5px;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+li > a:hover::after,
+li > a.active-nav::after {
+  width: 100%;
+  background: var(--gul);
+}
+
+/***********************************  KNAPPER  ***********************************/
+
+.knap_1 {
+  background-color: var(--gul);
+  border-style: solid;
+  border-color: var(--gul);
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--hvid);
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.knap_1:visited {
+  color: var(--hvid);
+}
+
+.knap_1:hover {
+  border-style: solid;
+  border-color: var(--gul);
+  background-color: transparent;
+  color: var(--gul);
+}
+
+.knap_2 {
+  border-style: solid;
+  border-color: var(--gul);
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--gul);
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.knap_2:visited {
+  color: var(--gul);
+}
+.knap_2:hover {
+  background-color: var(--gul);
+  color: var(--hvid);
+}
+
+button {
+  background-color: var(--gul);
+  border-style: solid;
+  border-color: var(--gul);
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--hvid);
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+button:visited {
+  color: var(--hvid);
+}
+
+button:hover {
+  border-style: solid;
+  border-color: var(--gul);
+  background-color: transparent;
+  color: var(--gul);
+}
+
+.button_luft {
+  padding: 2rem 0rem;
+}
+
+/***********************************  FORM  ***********************************/
+
+form {
+  padding: 2.5rem 0 1.5rem;
+  border-radius: 8px;
+  display: grid;
+  gap: 0.75rem;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.85rem;
+  color: var(--hvid);
+
+  margin: 2rem 0 0;
+}
+
+label,
+input,
+select {
+  display: block;
+  max-width: 90%;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+}
+
+textarea {
+  display: block;
+  max-width: 100%;
+  height: 4rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-felt {
+  display: grid;
+}
+
+/***********************************  SPECIALS  ***********************************/
+
+.right_txt {
+  text-align: right;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.luft {
+  padding: 1rem 1.5rem;
+}
+
+/***********************************  HEXAGONER  ***********************************/
+
+.hex {
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+.hex_1 {
+  background-color: var(--lysgron);
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  aspect-ratio: 1/1;
+  width: 20%;
+  padding: 3rem;
+}
+.hex_2 {
+  background-color: var(--lysblaa);
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  aspect-ratio: 1/1;
+  width: 20%;
+  padding: 3rem;
+}
+
+/********************************** BLÅ BAGGRUND **********************************/
+.top {
+  margin-bottom: -0.1rem;
+  display: block;
+  width: 105%;
+}
+
+.bund {
+  margin-top: -0.1rem;
+  display: block;
+  width: 105%;
+}
+.blaa {
+  background-color: var(--midnat);
+  padding: 2rem 1.5rem;
+}
+
+/***********************************  DESKTOP  ***********************************/
+
+@media (min-width: 800px) {
+  /* HEADER */
+  header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    gap: 2rem;
+    overflow-x: auto;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .rum {
+    margin: 2rem 10%;
+  }
+
+  /************** TEKSTER **************/
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
