@@ -1,6 +1,6 @@
 /***********************************  VARIABLER  ***********************************/
 
-.html {
+html {
   --gul: #ffa600;
   --midnat: #022e40;
   --brand: #04668c;
@@ -51,6 +51,34 @@ img {
   margin: 0;
 }
 
+.checkmark {
+  width: 2rem;
+  margin: 0.25rem;
+}
+
+.icon_social {
+  margin: 0;
+}
+
+/***********************************  VIDEO  ***********************************/
+
+.ramme {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 45%;
+  right: 10%;
+}
+
+.video {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
 /***********************************  TEKST  ***********************************/
 
 h1 {
@@ -97,6 +125,7 @@ p {
 
 .pf {
   font-size: 0.75rem;
+  text-align: center;
   padding: 0;
 }
 
@@ -199,7 +228,7 @@ header nav ul {
     width: 100%;
     height: 100%;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    z-index: 1;
+    z-index: 100;
   }
 
   nav.active .menu li {
@@ -215,7 +244,7 @@ footer {
 
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: center;
   gap: 4rem;
 }
 
@@ -224,10 +253,11 @@ footer {
   padding: 0;
 }
 
-.social_flex {
+.social_flex,
+.footer_flex {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: center;
 }
 .social_icon_flex {
   display: flex;
@@ -412,6 +442,27 @@ textarea {
   display: grid;
 }
 
+/***********************************  FLEX + GRID  ***********************************/
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 2rem auto;
+}
+.flex_checkmark {
+  align-items: center;
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
 /***********************************  SPECIALS  ***********************************/
 
 .right_txt {
@@ -445,6 +496,40 @@ textarea {
   aspect-ratio: 1/1;
   width: 20%;
   padding: 3rem;
+}
+.hex_3 {
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  background-color: var(--lysgron);
+  width: 100%;
+  padding: 5%;
+}
+.hex_4 {
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  background-color: var(--lysblaa);
+  width: 100%;
+  padding: 5%;
+}
+
+.hex_baggrund {
+  position: relative;
+}
+
+.hex_1_place {
+  position: absolute;
+  top: 1%;
+  left: 68%;
+  width: 47%;
+}
+.hex_2_place {
+  position: absolute;
+  top: 39%;
+  left: -21%;
+  width: 78%;
+}
+
+.frem {
+  z-index: 1;
+  position: relative;
 }
 
 /********************************** BLÅ BAGGRUND **********************************/
@@ -491,8 +576,25 @@ textarea {
     justify-content: space-around;
   }
 
+  .footer_flex {
+    align-items: start;
+  }
+
+  .social_flex {
+    align-items: end;
+  }
+
+  /************** WHITESPACE **************/
   .rum {
     margin: 2rem 10%;
+  }
+
+  .luft {
+    padding: 0;
+  }
+
+  .ramme {
+    padding: 2rem 2rem;
   }
 
   /************** TEKSTER **************/
@@ -511,5 +613,61 @@ textarea {
 
   p {
     font-size: 1rem;
+  }
+
+  /************** GRID **************/
+
+  .order {
+    order: -1;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+
+    margin: 2rem 10%;
+  }
+
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+
+    margin: 2rem 10%;
+  }
+
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 10%;
+  }
+
+  /************** VIDEO **************/
+  .overlay {
+    position: absolute;
+    top: 65%;
+    right: 10%;
+  }
+  .video {
+    border-radius: 5px;
+    margin: 0;
+  }
+
+  /************** HEXAGONER **************/
+
+  .hex_1_place {
+    position: absolute;
+    top: 27%;
+    left: 68%;
+    width: 35%;
+  }
+  .hex_2_place {
+    position: absolute;
+    top: 24%;
+    left: -9%;
+    width: 50%;
   }
 }
